@@ -1,0 +1,39 @@
+.a {
+    background-image: linear-gradient(to right top, #e4b096, #d0947a, #bc7861, #a85c49, #934034);
+    margin-top: 1%;
+    color: whitesmoke;
+    font-weight: bold;
+    width: 100%;
+}
+
+.pagination {
+    text-align: center;
+}
+
+@media (min-width:1200px) and (max-width:1600px) {
+    .list,
+    .a {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        place-items: center;
+        column-gap: 1%;
+    }
+}
+
+@media (min-width:900px) and (max-width:1200px) {
+    .list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center;
+        column-gap: 1%;
+    }
+}
+
+@media (min-width:300px) and (max-width:900px) {
+    .list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        column-gap: 1%;
+    }
+}
